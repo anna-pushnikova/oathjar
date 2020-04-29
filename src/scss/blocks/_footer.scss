@@ -1,0 +1,140 @@
+@import './variables';
+
+.footer {
+    padding: 0 15px;
+    width: auto;
+    margin-bottom: 50px;
+
+    @media (min-width: $desktop) {
+        width: 1170px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 125px;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: 600px) {
+        flex-direction: column;
+        align-items: baseline;
+
+    }
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+}
+
+.footer-copyright {
+    width: auto;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Poppins Light', sans-serif;
+
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-bottom: 40px;
+
+
+    @media (min-width: 900px) {
+        margin-bottom: 0;
+    }
+
+
+    @media (min-width: $desktop) {
+        width: 460px;
+    }
+}
+
+.footer-copyright__text {
+    padding-left: 17px;
+
+    @media (min-width: 900px) {
+        
+    }
+
+}
+
+.footer-copyright__logo {
+    padding-bottom: 10px;
+
+    @media (min-width: 900px) {
+        padding-bottom: 15px;
+    }
+}
+
+.footer-navigation {
+    color: #0d3e60;
+    width: auto;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 600px) {
+        width: 500px;
+    }
+
+
+    @media (min-width: 800px) {
+        min-width: 500px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 650px;
+    }
+
+}
+
+.footer-navigation-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+
+    }
+
+    @media (min-width: $desktop) {
+        flex-direction: row;
+    }
+
+    & a {
+        font-size: 16px;
+        font-family: 'Poppins Bold', sans-serif;
+        color: #0d3e60;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            color: rgb(233, 53, 21);
+        }
+    }
+
+
+    & li {
+        height: 25px;
+        padding-bottom: 35px;
+
+        @media (min-width: 600px) {
+            padding-bottom: 0;
+        }
+    }
+}
+
+  

@@ -1,0 +1,82 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }  
+  }
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    color: #0d3e60;
+    font-family: 'Poppins Light', sans-serif;
+    min-width: 320px;
+    margin:0px;
+    padding:0px;
+    position: relative ;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.scrollToTop-wrapper {
+    display: none;
+    width: 71px;
+    height: 71px;
+    background-color: rgba(235, 82, 56, 0.2);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin-right: auto;
+    margin-right: auto;
+
+    @media (min-width: 600px) {
+        bottom: 50px;
+        right: 50px;
+        width: 81px;
+        height: 81px; 
+    }
+    
+}
+
+.scrollToTop-icon {
+    border-radius: 50%;
+    background-color: rgb(235, 82, 56);
+    position: absolute;
+    left: 13px;
+    bottom: 13px;
+    width: 45px;
+    height: 45px;
+    transform: rotate(180deg);
+    background-image: url('./../img/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+        @media (min-width: 600px) {
+            width: 55px;
+            height: 55px;
+        }
+}
